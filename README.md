@@ -307,13 +307,8 @@ This project is developed by a team of undergraduate students from Institut Tekn
 This project is supervised by faculty members from the Department of Informatics Engineering, ITS:
 
 - **Dini Adni Navastara, S.Kom, M.Sc.**
-  - Department of Informatics Engineering, ITS
-
 - **Ilham Gurat Adillion, S.Kom., M.Kom.**
-  - Department of Informatics Engineering, ITS
-
 - **Aldinata Rizky Revanda, S.Kom., M.Kom.**
-  - Department of Informatics Engineering, ITS
 
 ## License
 
