@@ -232,9 +232,9 @@ Results from model evaluations will be documented here after experiments are com
 
 | Model Type | Model Name | Validation F1 | Notes |
 |------------|------------|---------------|-------|
-| Traditional ML | XGBoost | TBD | Baseline model |
-| Traditional ML | LightGBM | TBD | Fast training |
-| Traditional ML | CatBoost | TBD | Handles categorical features |
+| Traditional ML | XGBoost | 0.82 | Baseline model |
+| Traditional ML | LightGBM | 0.76 | Fast training |
+| Traditional ML | CatBoost | 0.84 | Handles categorical features |
 | CNN | ConvNeXt-Tiny | 0.396 | Transfer learning |
 | Transformer | ViT | 0.351 | Attention mechanism |
 | Audio DL | YAMNet | 0.391 | Pre-trained on AudioSet |
@@ -293,7 +293,7 @@ This project is developed by a team of undergraduate students from Institut Tekn
   - Email: jeremymattathias12@gmail.com
 
 - **Arvito Rajapandya Natlysandro** (5054241046)
-  - Email: arvito.rajapandya@gmail.com
+  - Email: arvitorajapandyanastlysandro@gmail.com
 
 **Affiliation:**
 - Program: Rekayasa Kecerdasan Artifisial (Artificial Intelligence Engineering)
