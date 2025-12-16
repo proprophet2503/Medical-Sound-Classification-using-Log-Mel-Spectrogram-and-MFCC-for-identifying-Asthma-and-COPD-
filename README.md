@@ -226,7 +226,6 @@ Results from model evaluations will be documented here after experiments are com
 | Traditional ML | CatBoost | 0.84 | Handles categorical features |
 | CNN | ConvNeXt-Tiny | 0.39 | Transfer learning |
 | Transformer | ViT | 0.35 | Attention mechanism |
-| Audio DL | YAMNet | 0.391 | Pre-trained on AudioSet |
 | RNN | LSTM | 0.38 | Temporal modeling |
 | RNN | LSTM with Attention| 0.40 | Temporal modeling |
 | RNN | Bi-RNN with Attention| 0.35 | Temporal modeling |
