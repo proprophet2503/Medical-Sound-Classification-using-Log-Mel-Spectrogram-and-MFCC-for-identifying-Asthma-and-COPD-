@@ -238,9 +238,12 @@ Results from model evaluations will be documented here after experiments are com
 | CNN | ConvNeXt-Tiny | 0.396 | Transfer learning |
 | Transformer | ViT | 0.351 | Attention mechanism |
 | Audio DL | YAMNet | 0.391 | Pre-trained on AudioSet |
-| RNN | Bi-LSTM | TBD | Temporal modeling |
-| RNN | Bi-GRU | TBD | Faster than LSTM |
-| Ensemble | Cough+Vowel Fusion | TBD | Best performance |
+| RNN | LSTM | 0.38 | Temporal modeling |
+| RNN | LSTM with Attention| 0.40 | Temporal modeling |
+| RNN | Bi-RNN with Attention| 0.35 | Temporal modeling |
+| RNN | Bi-GRU with Attention| 0.43 | Temporal modeling |
+| RNN | Bi-LSTM with Attention| 0.44 | Temporal modeling |
+| RNN | Bi-LSTM with Attention Kaggle Embedding| 0.69 | Temporal modeling |
 
 ### Best Practices Identified
 
