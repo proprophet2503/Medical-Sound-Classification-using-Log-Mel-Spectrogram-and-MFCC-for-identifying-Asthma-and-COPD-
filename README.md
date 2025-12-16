@@ -235,9 +235,9 @@ Results from model evaluations will be documented here after experiments are com
 | Traditional ML | XGBoost | TBD | Baseline model |
 | Traditional ML | LightGBM | TBD | Fast training |
 | Traditional ML | CatBoost | TBD | Handles categorical features |
-| CNN | ConvNeXt-Tiny | TBD | Transfer learning |
-| Transformer | Vision Transformer | TBD | Attention mechanism |
-| Audio DL | YAMNet | TBD | Pre-trained on AudioSet |
+| CNN | ConvNeXt-Tiny | 0.396 | Transfer learning |
+| Transformer | ViT | 0.351 | Attention mechanism |
+| Audio DL | YAMNet | 0.391 | Pre-trained on AudioSet |
 | RNN | Bi-LSTM | TBD | Temporal modeling |
 | RNN | Bi-GRU | TBD | Faster than LSTM |
 | Ensemble | Cough+Vowel Fusion | TBD | Best performance |
