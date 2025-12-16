@@ -288,15 +288,12 @@ This project is developed by a team of undergraduate students from Institut Tekn
 
 - **Fa'iz Akbar Hizbullah** (5054241005)
   - Email: faizakbar2301@gmail.com
-  - Role: Traditional ML, XGBoost/LightGBM/CatBoost implementations
 
 - **Jeremy Mattathias Mboe** (5054241012)
   - Email: jeremymattathias12@gmail.com
-  - Role: Deep Learning, CNN/ViT implementations, project coordination
 
 - **Arvito Rajapandya Natlysandro** (5054241046)
   - Email: arvito.rajapandya@gmail.com
-  - Role: Sequential Models, RNN/LSTM/GRU implementations
 
 **Affiliation:**
 - Program: Rekayasa Kecerdasan Artifisial (Artificial Intelligence Engineering)
