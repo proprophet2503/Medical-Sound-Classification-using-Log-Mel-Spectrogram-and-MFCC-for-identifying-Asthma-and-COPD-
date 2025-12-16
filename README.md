@@ -290,7 +290,7 @@ This project is developed by a team of undergraduate students from Institut Tekn
   - Email: faizakbar2301@gmail.com
 
 - **Jeremy Mattathias Mboe** (5054241012)
-  - Email: jeremymattathias12@gmail.com
+  - Email: jeremymattathiasmboe@gmail.com
 
 - **Arvito Rajapandya Natlysandro** (5054241046)
   - Email: arvitorajapandyanastlysandro@gmail.com
