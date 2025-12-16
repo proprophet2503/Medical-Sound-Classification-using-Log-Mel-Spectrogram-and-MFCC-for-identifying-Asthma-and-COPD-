@@ -1,7 +1,6 @@
 # Medical Sound Classification using Log-Mel Spectrogram and MFCC for Identifying Asthma and COPD
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange.svg)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -11,6 +10,7 @@ This project implements a comprehensive machine learning solution for classifyin
 
 ## Table of Contents
 
+- [Overview](#overview)
 - [Background](#background)
 - [Objectives](#objectives)
 - [Dataset](#dataset)
@@ -18,10 +18,12 @@ This project implements a comprehensive machine learning solution for classifyin
   - [Audio Preprocessing](#audio-preprocessing)
   - [Feature Extraction](#feature-extraction)
   - [Model Architecture](#model-architecture)
+    - [Traditional Machine Learning](#traditional-machine-learning)
+    - [Deep Learning - Image Classification Models](#deep-learning---image-classification-models)
+    - [Deep Learning - Sequential Models](#deep-learning---sequential-models)
   - [Ensemble Methods](#ensemble-methods)
 - [Project Structure](#project-structure)
 - [Results](#results)
-- [Evaluation Metrics](#evaluation-metrics)
 - [Requirements](#requirements)
 - [Contributors](#contributors)
 - [Supervisors](#supervisors)
@@ -43,7 +45,7 @@ The primary objectives of this research are:
 1. To develop robust audio preprocessing and feature extraction pipelines for respiratory sound analysis
 2. To investigate and compare the performance of traditional machine learning algorithms (XGBoost, LightGBM, CatBoost) on audio-derived features
 3. To design and implement deep learning architectures including CNNs, Vision Transformers, and RNNs for audio classification
-4. To evaluate the effectiveness of transfer learning approaches using pre-trained models (ConvNeXt, YAMNet, Vision Transformer)
+4. To evaluate the effectiveness of transfer learning approaches using pre-trained models (ConvNeXt, Vision Transformer)
 5. To create an ensemble system that combines multiple models to achieve superior classification performance
 
 ## Dataset
@@ -71,7 +73,7 @@ This project utilizes the **Kaggle Medical Sound Classification Challenge** data
 The audio preprocessing pipeline consists of the following steps:
 
 1. **Audio Loading:** Load WAV files using librosa with consistent sampling rate
-2. **Resampling:** Standardize all audio to 16 kHz sampling rate for YAMNet compatibility
+2. **Resampling:** Standardize all audio to 16 kHz sampling rate
 3. **Normalization:** Amplitude normalization to [-1, 1] range
 4. **Silence Removal:** Trim leading and trailing silence using energy-based detection
 5. **Duration Standardization:** Pad or truncate audio to fixed length when necessary
@@ -93,12 +95,6 @@ Two primary feature extraction methods are employed:
 - **Frame Length:** 25 ms
 - **Frame Shift:** 10 ms
 - **Output Format:** Time-series data for RNN/LSTM models
-
-#### 3. YAMNet Embeddings
-- **Pre-trained Model:** Google's YAMNet (AudioSet)
-- **Embedding Dimension:** 1024
-- **Temporal Pooling:** Global average pooling over time dimension
-- **Output Format:** Fixed-length feature vector
 
 ### Model Architecture
 
@@ -123,7 +119,7 @@ Three gradient boosting algorithms are implemented with hyperparameter optimizat
 
 **Feature Variants:**
 - CSV metadata only
-- Audio embeddings (YAMNet)
+- Audio embeddings
 - Combined features (metadata + embeddings)
 - Separate cough and vowel models
 - Full feature fusion
@@ -139,12 +135,6 @@ Three gradient boosting algorithms are implemented with hyperparameter optimizat
 - Architecture: ViT-Base patch16-224 (ImageNet-21k pre-trained)
 - Input: 224x224x3 Log-Mel Spectrogram images
 - Patch Size: 16x16
-
-**3. YAMNet Transfer Learning**
-- Architecture: YAMNet encoder + custom classifier
-- Input: Raw audio waveform (16 kHz)
-- Embeddings: 1024-dimensional
-- Training: Linear probing (warmup) + full fine-tuning
 
 #### Deep Learning - Sequential Models
 
@@ -185,7 +175,6 @@ Medical-Sound-Classification-using-Log-Mel-Spectrogram-and-MFCC-for-identifying-
 ├── Image_Classification_Models/
 │   ├── convnext.ipynb                        # ConvNeXt-Tiny implementation
 │   ├── vit.ipynb                             # Vision Transformer implementation
-│   ├── yamnet.ipynb                          # YAMNet transfer learning
 │   └── preprocess_log_mel_spectrograms.ipynb # Preprocessing pipeline
 │
 ├── Sequential_Models/
@@ -235,8 +224,8 @@ Results from model evaluations will be documented here after experiments are com
 | Traditional ML | XGBoost | 0.82 | Baseline model |
 | Traditional ML | LightGBM | 0.76 | Fast training |
 | Traditional ML | CatBoost | 0.84 | Handles categorical features |
-| CNN | ConvNeXt-Tiny | 0.396 | Transfer learning |
-| Transformer | ViT | 0.351 | Attention mechanism |
+| CNN | ConvNeXt-Tiny | 0.39 | Transfer learning |
+| Transformer | ViT | 0.35 | Attention mechanism |
 | Audio DL | YAMNet | 0.391 | Pre-trained on AudioSet |
 | RNN | LSTM | 0.38 | Temporal modeling |
 | RNN | LSTM with Attention| 0.40 | Temporal modeling |
@@ -266,8 +255,6 @@ Results from model evaluations will be documented here after experiments are com
 
 ### Deep Learning Frameworks
 - PyTorch 2.0+
-- TensorFlow 2.10+
-- TensorFlow Hub
 
 ### Computer Vision
 - timm (PyTorch Image Models)
@@ -327,7 +314,6 @@ We would like to express our gratitude to:
 - **Department of Informatics Engineering** for the computational infrastructure and support
 - **Kaggle** for hosting the Medical Sound Classification Challenge and providing the dataset
 - **Our supervisors** for their guidance, feedback, and mentorship throughout this project
-- **Google Research** for the YAMNet pre-trained model and AudioSet dataset
 - **Meta AI** and **timm library maintainers** for pre-trained ConvNeXt models
 - **OpenAI** and the **PyTorch community** for excellent documentation and tutorials
 - **XGBoost, LightGBM, and CatBoost teams** for their efficient gradient boosting implementations
