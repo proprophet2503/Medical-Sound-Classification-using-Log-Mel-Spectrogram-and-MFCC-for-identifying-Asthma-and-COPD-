@@ -347,7 +347,7 @@ Hizbullah, F. A., Mboe, J. M., & Natlysandro, A. R. (2025). Medical Sound Classi
 **Contact:**
 
 For questions, suggestions, or collaborations, please contact:
-- Email: jeremymattathias12@gmail.com
+- Email: jeremymattathias@gmail.com
 - GitHub Issues: [Project Issues Page](https://github.com/yourusername/Medical-Sound-Classification/issues)
 
 **Last Updated:** December 2025
